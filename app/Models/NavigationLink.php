@@ -31,5 +31,12 @@ class NavigationLink extends Model
             "classes" => "",
             "dropdown" => false,
         ],
+        [
+            "name" => "Contact Us",
+            "slug" => "contact-us",
+            "route" => "contact-us",
+            "classes" => "",
+            "dropdown" => false,
+        ],
     ];
 }

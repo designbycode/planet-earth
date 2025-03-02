@@ -25,6 +25,9 @@ class EventResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\SpatieMediaLibraryFileUpload::make('featured_image')
+                    ->columnSpanFull()
+                    ->image(),
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->live(onBlur: true)
