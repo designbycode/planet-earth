@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-     
+
 
     <!-- Submission Section -->
     <section id="submissions" class="py-20 bg-primary-900">
