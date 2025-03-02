@@ -20,7 +20,7 @@
                     </p>
                 </div>
                 <div class="relative h-80 md:h-96 rounded-lg overflow-hidden">
-                    <img src="{{ Vite::asset('./resources/img/Planet-Earth2.jpg') }}" alt="Festival Audience" class="object-cover w-full h-full">
+                    <img src="https://placehold.co/800x600" alt="Festival Audience" class="object-cover w-full h-full">
                 </div>
             </div>
         </div>
