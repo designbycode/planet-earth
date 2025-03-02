@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEFEST 2025 - International Film Festival</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e50914',
+                        secondary: '#141414',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-film text-primary text-2xl"></i>
+                <span class="text-xl font-bold">CINEFEST 2025</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#schedule" class="hover:text-primary transition-colors">Schedule</a>
+                <a href="#awards" class="hover:text-primary transition-colors">Awards</a>
+                <a href="#submissions" class="hover:text-primary transition-colors">Submissions</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button class="bg-primary text-white px-4 py-2 rounded hover:bg-red-700 transition-colors">
+                Get Tickets
+            </button>
+            <div class="md:hidden" id="menuToggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="#about" class="text-2xl hover:text-primary transition-colors">About</a>
+            <a href="#schedule" class="text-2xl hover:text-primary transition-colors">Schedule</a>
+            <a href="#awards" class="text-2xl hover:text-primary transition-colors">Awards</a>
+            <a href="#submissions" class="text-2xl hover:text-primary transition-colors">Submissions</a>
+            <a href="#contact" class="text-2xl hover:text-primary transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">CINEFEST 2025</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Celebrating the art of cinema and honoring exceptional filmmaking from around the world
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-calendar text-primary"></i>
+                    <span>May 15-22, 2025</span>
+                </div>
+                <div class="hidden md:block h-4 w-px bg-white/30"></div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <span>Metropolitan Arts Center</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">About The Festival</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg mb-6">
+                        CINEFEST is an annual celebration of independent cinema, showcasing groundbreaking films
+                        from emerging and established filmmakers across the globe.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Founded in 2010, our festival has grown to become one of the most prestigious platforms
+                        for discovering new talent and honoring cinematic excellence.
+                    </p>
+                    <p class="text-lg">
+                        Each year, we present a carefully curated selection of features, documentaries, shorts,
+                        and experimental works that push the boundaries of storytelling.
+                    </p>
+                </div>
+                <div class="relative h-80 md:h-96 rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/800x600" alt="Festival Audience" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section with Bento Grid -->
+    <section id="awards" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center mb-12 space-x-3">
+                <i class="fas fa-award text-primary text-3xl"></i>
+                <h2 class="text-3xl md:text-4xl font-bold text-center">Festival Awards</h2>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Grand Prize - Larger tile -->
+                <div class="md:col-span-2 md:row-span-2 bg-gradient-to-br from-red-900/50 to-black border border-red-500/20 rounded-xl p-8 hover:border-red-500/50 transition-all group">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-bold">Grand Prize</h3>
+                        <i class="fas fa-award text-primary text-2xl group-hover:text-yellow-500 transition-colors"></i>
+                    </div>
+                    <p class="mb-4 text-gray-300">
+                        Our most prestigious award honoring exceptional achievement in filmmaking. The winning film
+                        demonstrates outstanding artistic vision, technical excellence, and powerful storytelling.
+                    </p>
+                    <div class="mt-auto">
+                        <div class="text-sm text-gray-400 mb-2">Prize includes:</div>
+                        <ul class="text-sm text-gray-300 list-disc list-inside">
+                            <li>$50,000 cash award</li>
+                            <li>Distribution opportunities</li>
+                            <li>Industry recognition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Best Director -->
+                <div class="bg-gray-800 border border-white/10 rounded-xl p-6 hover:border-white/30 transition-all">
+                    <h3 class="text-xl font-bold mb-3">Best Director</h3>
+                    <p class="text-gray-300 text-sm">
+                        Recognizing exceptional direction and vision in bringing a story to life on screen.
+                    </p>
+                </div>
+
+                <!-- Best Screenplay -->
+                <div class="bg-gray-800 border border-white/10 rounded-xl p-6 hover:border-white/30 transition-all">
+                    <h3 class="text-xl font-bold mb-3">Best Screenplay</h3>
+                    <p class="text-gray-300 text-sm">
+                        Celebrating outstanding writing and narrative structure in film.
+                    </p>
+                </div>
+
+                <!-- Best Cinematography -->
+                <div class="bg-gray-800 border border-white/10 rounded-xl p-6 hover:border-white/30 transition-all">
+                    <h3 class="text-xl font-bold mb-3">Best Cinematography</h3>
+                    <p class="text-gray-300 text-sm">
+                        Honoring exceptional visual composition, lighting, and camera work.
+                    </p>
+                </div>
+
+                <!-- Audience Choice - Medium tile -->
+                <div class="md:col-span-2 bg-gradient-to-br from-blue-900/50 to-black border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/50 transition-all">
+                    <h3 class="text-xl font-bold mb-3">Audience Choice Award</h3>
+                    <p class="text-gray-300">
+                        Selected by festival attendees, this award celebrates the film that resonates most with our audience.
+                    </p>
+                </div>
+
+                <!-- Best Documentary -->
+                <div class="bg-gray-800 border border-white/10 rounded-xl p-6 hover:border-white/30 transition-all">
+                    <h3 class="text-xl font-bold mb-3">Best Documentary</h3>
+                    <p class="text-gray-300 text-sm">
+                        Recognizing excellence in non-fiction filmmaking and storytelling.
+                    </p>
+                </div>
+
+                <!-- Emerging Filmmaker -->
+                <div class="bg-gray-800 border border-white/10 rounded-xl p-6 hover:border-white/30 transition-all">
+                    <h3 class="text-xl font-bold mb-3">Emerging Filmmaker</h3>
+                    <p class="text-gray-300 text-sm">
+                        Celebrating promising talent from first or second-time directors.
+                    </p>
+                </div>
+
+                <!-- Special Jury Prize - Medium tile -->
+                <div class="md:col-span-2 bg-gradient-to-br from-purple-900/50 to-black border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all">
+                    <h3 class="text-xl font-bold mb-3">Special Jury Prize</h3>
+                    <p class="text-gray-300">
+                        A special recognition awarded by our jury for unique artistic achievement or innovation in cinema.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Section -->
+    <section id="submissions" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Submit Your Film</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                We're looking for bold, innovative films that push the boundaries of storytelling.
+                Submissions for CINEFEST 2025 are now open.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="px-6 py-3 bg-primary hover:bg-red-700 rounded-md transition-colors">
+                    Submission Guidelines
+                </button>
+                <button class="px-6 py-3 bg-transparent border border-white/30 hover:border-white rounded-md transition-colors">
+                    Submit Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <span>info@cinefest.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span>123 Cinema Boulevard, Filmtown, CA 90210</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 text-sm">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-3 bg-primary hover:bg-red-700 rounded-md transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-950 border-t border-white/10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <i class="fas fa-film text-primary"></i>
+                    <span class="text-lg font-bold">CINEFEST 2025</span>
+                </div>
+                <div class="text-sm text-gray-400">
+                    © <span id="currentYear"></span> CINEFEST. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
