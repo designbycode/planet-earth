@@ -1,8 +1,14 @@
 <x-app-layout>
+    <x-slot name="seo">
+        <x-seo-meta :$meta/>
+    </x-slot>
     <x-hero/>
     <!-- About Section -->
-    <section id="about" class="py-20">
+    <section id="about" class="py-10">
         <div class="wrapper">
+            @if($upcomingEvent->title !== 'No upcoming events')
+                <x-timer class="mx-auto z-10 -translate-y-30" :event="$upcomingEvent"/>
+            @endif
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">About The Festival</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -45,8 +51,6 @@
             </div>
         </div>
     </section>
-
-
 
 
 </x-app-layout>

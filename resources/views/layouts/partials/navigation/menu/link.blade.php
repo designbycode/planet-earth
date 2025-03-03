@@ -2,7 +2,7 @@
 
 @php
     // Determine if the current route matches the link's route
-    $active = request()->routeIs($link->route);
+    $active = request()->routeIs($link->activeRoute);
 
     // Start with the base classes
     $classes = $full ? 'flex' : 'inline-flex';
@@ -19,6 +19,6 @@
     $classes .= $link->classes;
 @endphp
 
-<a wire:navigate {{ $attributes->merge(['class' => $classes, 'href' => route($link->route)]) }}>
+<a wire:navigate.hover {{ $attributes->merge(['class' => $classes, 'href' => route($link->route)]) }}>
     {{ $link->name }}
 </a>

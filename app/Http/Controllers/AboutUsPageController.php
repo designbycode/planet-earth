@@ -1,17 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+    namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\View\View;
+    use Illuminate\View\View;
 
-class AboutUsPageController extends Controller
-{
-    /**
-     * Handle the incoming request.
-     */
-    public function __invoke(): View
+    class AboutUsPageController extends Controller
     {
-        return view('pages.about-us');
+        /**
+         * Handle the incoming request.
+         */
+        public function __invoke(): View
+        {
+            return view('pages.about-us', [
+                'meta' => [
+                    'title' => 'About Us',
+                    'description' => 'About Us'
+                ]
+            ]);
+        }
     }
-}

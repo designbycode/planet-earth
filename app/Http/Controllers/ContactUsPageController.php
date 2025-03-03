@@ -4,17 +4,17 @@
 
     use Illuminate\View\View;
 
-    class HomePageController extends Controller
+    class ContactUsPageController extends Controller
     {
         /**
          * Handle the incoming request.
          */
         public function __invoke(): View
         {
-            return view('pages.index', [
+            return view('pages.contact-us', [
                 'meta' => [
-                    'title' => 'Home Page',
-                    'description' => 'Home Page'
+                    'title' => 'Contact Us',
+                    'description' => 'Contact Us'
                 ]
             ]);
         }

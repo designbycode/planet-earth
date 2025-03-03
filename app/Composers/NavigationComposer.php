@@ -9,7 +9,7 @@
     class NavigationComposer {
 
 
-        public  $links;
+        public object $links;
         public function compose(View $view): View
         {
             $this->links = Cache::remember('nav-links', config('cache.time_to_life'), function () {

@@ -25,7 +25,7 @@
         hidden
     >
         <div class="relative bg-gray-200 dark:bg-gray-900 p-6 grid grid-cols-2 lg:grid-cols-4 gap-6 border border-primary-500 rounded-md">
-            <a role="menuitem" wire:navigate class="font-black text-gray-900 dark:text-gray-100 hover:text-primary-500 text-lg hover:dark:text-primary-500"
+            <a wire:navigate.hover class="font-black text-gray-900 dark:text-gray-100 hover:text-primary-500 text-lg hover:dark:text-primary-500"
                href="{{ route('home') }}" role="menuitem">
                 Home
             </a>

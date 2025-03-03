@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Composers\NavigationComposer;
+use App\Composers\UpcomingEventComposer;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
@@ -14,6 +15,7 @@ class ViewComposerServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->singleton(NavigationComposer::class);
+        $this->app->singleton(UpcomingEventComposer::class);
     }
 
     /**
@@ -22,6 +24,6 @@ class ViewComposerServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer("*", NavigationComposer::class);
-
+        View::composer("*", UpcomingEventComposer::class);
     }
 }
