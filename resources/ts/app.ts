@@ -10,7 +10,7 @@ document.addEventListener("livewire:navigated", () => {
     if (canvas) {
         setupStarField(canvas, {
             starCount: 1800,
-            speed: 1,
+            speed: 0.4,
             backgroundColor: '#000814',
             minStarSize: 0.25,
             maxStarSize: 1.5,

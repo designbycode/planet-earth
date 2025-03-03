@@ -1,9 +1,10 @@
 <header class=" min-h-screen relative overflow-clip place-content-center bg-gray-950 text-white">
     <canvas class="absolute inset-0 z-0" id="starCanvas"></canvas>
     <div class="wrapper grid relative z-10">
-        <h1 class="text-9xl text-center font-black tracking-tight relative">
+        <h1 class="text-6xl md:text-7xl lg:text-9xl text-center font-black tracking-tight relative">
              {{ config('app.name') }}
-            <span class="absolute left-1/2 z-10 -translate-x-1/2 text-white -bottom-6 rotate-3 inline-block text-nowrap text-4xl bg-primary-500/70 p-3 backdrop-blur-md rounded-md text-center font-black tracking-widest">
+            <span class="absolute left-1/2 z-10 -translate-x-1/2 text-white -bottom-8 lg:-bottom-6 rotate-3 inline-block text-nowrap text-2xl lg:text-4xl bg-primary-500/70 p-1.5 lg:p-3 backdrop-blur-md rounded-md text-center font-black
+            tracking-widest">
                 Film Festival
             </span>
         </h1>
