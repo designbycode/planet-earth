@@ -3,7 +3,8 @@ import "vanilla-headless"
 import "./theme-toggle"
 import {setupStarField} from "./starfield";
 import ThemeManager from "@designbycode/theme-manager";
-
+import CountdownTimer from "./CountdownTimer";
+import.meta.glob(["../img/**/*.{webp,png,svg,jpeg,jpg}"])
 
 document.addEventListener("livewire:navigated", () => {
     const canvas = document.querySelector<HTMLCanvasElement>('#starCanvas')!
@@ -21,4 +22,14 @@ document.addEventListener("livewire:navigated", () => {
             paused: false
         })
     }
+
 })
+
+// Initialize countdown timer for all elements with the class 'countdown'
+function initializeCountdowns(): void {
+    const countdownContainers = document.querySelectorAll('.countdown') as NodeListOf<HTMLElement>;
+    countdownContainers.forEach(container => new CountdownTimer(container));
+}
+
+
+document.addEventListener('livewire:navigated', initializeCountdowns);
