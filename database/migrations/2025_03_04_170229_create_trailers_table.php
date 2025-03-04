@@ -10,17 +10,12 @@
          */
         public function up(): void
         {
-            Schema::create('events', function (Blueprint $table) {
+            Schema::create('trailers', function (Blueprint $table) {
                 $table->id();
                 $table->string('title');
-                $table->string('slug')->unique();
+                $table->string('code');
+                $table->string('author');
                 $table->text('description')->nullable();
-                $table->text('content')->nullable();
-                $table->string('location')->nullable();
-                $table->double('latitude')->nullable();
-                $table->double('longitude')->nullable();
-                $table->timestamp('event_start')->nullable();
-                $table->timestamp('event_end')->nullable();
                 $table->softDeletes();
                 $table->timestamps();
             });
@@ -31,6 +26,6 @@
          */
         public function down(): void
         {
-            Schema::dropIfExists('events');
+            Schema::dropIfExists('trailers');
         }
     };

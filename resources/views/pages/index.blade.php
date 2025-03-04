@@ -13,7 +13,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <p class="text-lg mb-6">
-                        CINEFEST is an annual celebration of independent cinema, showcasing groundbreaking films
+                        Planet Earth is an annual celebration of independent cinema, showcasing groundbreaking films
                         from emerging and established filmmakers across the globe.
                     </p>
                     <p class="text-lg mb-6">
@@ -32,20 +32,19 @@
         </div>
     </section>
 
-
     <!-- Submission Section -->
-    <section id="submissions" class="py-20 bg-primary-900">
+    <section id="submissions" class="py-20 bg-primary-600 text-white ">
         <div class="wrapper text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Submit Your Film</h2>
             <p class="text-lg mb-8 max-w-2xl mx-auto">
                 We're looking for bold, innovative films that push the boundaries of storytelling.
-                Submissions for CINEFEST 2025 are now open.
+                Submissions for Planet Earth 2025 are now open.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
                 <button class="px-6 py-3 bg-primary-500 hover:bg-primary-400 text-white font-semibold rounded-md transition-colors">
                     Submission Guidelines
                 </button>
-                <button class="px-6 py-3 bg-transparent border border-gray-700/30 hover:border-gray-700 rounded-md transition-colors">
+                <button class="px-6 py-3 bg-transparent border border-white/75 hover:border-white rounded-md transition-colors">
                     Submit Now
                 </button>
             </div>

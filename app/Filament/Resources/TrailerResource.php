@@ -2,22 +2,20 @@
 
     namespace App\Filament\Resources;
 
-    use App\Filament\Resources\EventResource\Pages;
-    use App\Filament\Resources\EventResource\RelationManagers;
-    use App\Models\Event;
+    use App\Filament\Resources\TrailerResource\Pages;
+    use App\Filament\Resources\TrailerResource\RelationManagers;
+    use App\Models\Trailer;
     use Filament\Forms;
     use Filament\Forms\Form;
-    use Filament\Forms\Set;
     use Filament\Resources\Resource;
     use Filament\Tables;
     use Filament\Tables\Table;
     use Illuminate\Database\Eloquent\Builder;
     use Illuminate\Database\Eloquent\SoftDeletingScope;
-    use Illuminate\Support\Str;
 
-    class EventResource extends Resource
+    class TrailerResource extends Resource
     {
-        protected static ?string $model = Event::class;
+        protected static ?string $model = Trailer::class;
 
         protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -25,26 +23,17 @@
         {
             return $form
                 ->schema([
-                    Forms\Components\SpatieMediaLibraryFileUpload::make('featured_image')
-                        ->collection('events')
-                        ->multiple()
-                        ->columnSpanFull()
-                        ->image(),
                     Forms\Components\TextInput::make('title')
                         ->required()
-                        ->live(onBlur: true)
-                        ->afterStateUpdated(fn (Set $set, string $state) => $set('slug', Str::slug($state)))
                         ->maxLength(191),
-                    Forms\Components\TextInput::make('slug')
+                    Forms\Components\TextInput::make('code')
+                        ->required()
+                        ->maxLength(191),
+                    Forms\Components\TextInput::make('author')
                         ->required()
                         ->maxLength(191),
                     Forms\Components\RichEditor::make('description')
                         ->columnSpanFull(),
-                    Forms\Components\TextInput::make('location')
-                        ->maxLength(191)
-                        ->columnSpanFull(),
-                    Forms\Components\DateTimePicker::make('event_start'),
-                    Forms\Components\DateTimePicker::make('event_end'),
                 ]);
         }
 
@@ -54,16 +43,10 @@
                 ->columns([
                     Tables\Columns\TextColumn::make('title')
                         ->searchable(),
-                    Tables\Columns\TextColumn::make('slug')
+                    Tables\Columns\TextColumn::make('code')
                         ->searchable(),
-                    Tables\Columns\TextColumn::make('location')
+                    Tables\Columns\TextColumn::make('author')
                         ->searchable(),
-                    Tables\Columns\TextColumn::make('event_start')
-                        ->dateTime()
-                        ->sortable(),
-                    Tables\Columns\TextColumn::make('event_end')
-                        ->dateTime()
-                        ->sortable(),
                     Tables\Columns\TextColumn::make('deleted_at')
                         ->dateTime()
                         ->sortable()
@@ -102,9 +85,9 @@
         public static function getPages(): array
         {
             return [
-                'index' => Pages\ListEvents::route('/'),
-                'create' => Pages\CreateEvent::route('/create'),
-                'edit' => Pages\EditEvent::route('/{record}/edit'),
+                'index' => Pages\ListTrailers::route('/'),
+                'create' => Pages\CreateTrailer::route('/create'),
+                'edit' => Pages\EditTrailer::route('/{record}/edit'),
             ];
         }
 

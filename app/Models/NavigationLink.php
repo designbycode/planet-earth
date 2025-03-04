@@ -28,6 +28,14 @@
                 "dropdown" => false,
             ],
             [
+                "name" => "Trailers",
+                "slug" => "trailers",
+                "route" => "trailers.index",
+                "activeRoute" => "trailers*",
+                "classes" => "",
+                "dropdown" => false,
+            ],
+            [
                 "name" => "Film Festivals",
                 "slug" => "film-festivals",
                 "route" => "film-festivals.index",

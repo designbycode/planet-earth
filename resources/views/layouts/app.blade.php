@@ -17,7 +17,7 @@
     @vite(['resources/css/app.css', 'resources/ts/app.ts'])
     @livewireStyles
 </head>
-<body class="antialiased flex flex-col text-gray-700 bg-gray-100  dark:bg-gray-950 dark:text-gray-300 h-full">
+<body class="antialiased overflow-x-clip flex flex-col text-gray-700 bg-gray-100  dark:bg-gray-950 dark:text-gray-300 h-full">
 <x-skip/>
 <x-navigation/>
 <main id="main" class="flex-1">

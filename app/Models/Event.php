@@ -2,6 +2,7 @@
 
     namespace App\Models;
 
+    use Illuminate\Database\Eloquent\Casts\Attribute;
     use Illuminate\Database\Eloquent\Factories\HasFactory;
     use Illuminate\Database\Eloquent\Model;
     use Illuminate\Database\Eloquent\SoftDeletes;
@@ -18,9 +19,12 @@
             "title",
             "slug",
             "description",
+            "content",
             "event_start",
             "event_end",
-            "location"
+            "location",
+            "latitude",
+            "longitude",
         ];
 
         public function registerMediaCollections(): void
@@ -41,11 +45,27 @@
                 });
         }
 
+        protected function location(): Attribute
+        {
+            return Attribute::make(
+                get: fn (mixed $value, array $attributes) => [
+                    'latitude' => $attributes['latitude'],
+                    'longitude' => $attributes['longitude']
+                ],
+                set: fn (array $value) => [
+                    'latitude' => $value['latitude'],
+                    'longitude' => $value['longitude']
+                ],
+            );
+        }
+
         protected function casts(): array
         {
             return [
                 'event_start' => 'datetime',
-                'event_end' => 'datetime'
+                'event_end' => 'datetime',
+                'latitude' => 'double',
+                'longitude' => 'double',
             ];
         }
 
