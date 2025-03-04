@@ -4,7 +4,7 @@
         <x-navigation.brand/>
         <div class="flex items-center">
             <x-navigation.wrapper>
-                <x-navigation.menu />
+                <x-navigation.menu :$links/>
             </x-navigation.wrapper>
             <x-navigation.theme/>
             <x-navigation.mobile.toggle/>

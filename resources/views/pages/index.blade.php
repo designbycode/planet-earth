@@ -6,7 +6,7 @@
     <!-- About Section -->
     <section id="about" class="py-10">
         <div class="wrapper">
-            @if($upcomingEvent->title !== 'No upcoming events')
+            @if($upcomingEvent)
                 <x-timer class="mx-auto z-10 -translate-y-30" :event="$upcomingEvent"/>
             @endif
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">About The Festival</h2>
