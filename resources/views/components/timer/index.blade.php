@@ -1,5 +1,5 @@
 @props(['event', 'showUpcoming' => true, 'showTitle' => true])
-@if($event->title !== 'No upcoming events')
+@if($event)
     <div {{ $attributes->merge(['class' => 'countdown my-4 scale-90 flex flex-col items-center']) }}  data-time="{{ $event->event_start }}">
         @if($showUpcoming)
             <div class="text-center my-2 border border-white/20 px-6 py-1.5 text-sm rounded-full bg-white/10 inline-block mx-auto">
