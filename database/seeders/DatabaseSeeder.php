@@ -2,6 +2,7 @@
 
     namespace Database\Seeders;
 
+    use App\Models\User;
     use Illuminate\Database\Seeder;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -15,13 +16,16 @@
         {
             // User::factory(10)->create();
 
-//            $user = User::factory()->create([
-//                'name' => 'Test User',
-//                'email' => 'test@example.com',
-//            ]);
+            $user = User::factory()->create([
+                'name' => 'Test User',
+                'email' => 'test@example.com',
+            ]);
 
             $this->call([
-                UserSeeder::class
+                UserSeeder::class,
+                RoleSeeder::class
             ]);
+
+            $user->assignRole('Super Admin');
         }
     }
