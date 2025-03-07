@@ -4,7 +4,7 @@
         aria-haspopup="true"
         id="navigation_link_{{ Str::lower($link->name) }}"
         @class([
-          $link->classes,
+          $link->class,
           'btn group -mr-4',
           ])>
         <span>{{ $link->name }}</span>

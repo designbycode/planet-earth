@@ -22,10 +22,12 @@
             ]);
 
             $this->call([
-                UserSeeder::class,
-                RoleSeeder::class
+                RoleSeeder::class,
+//                UserSeeder::class,
             ]);
 
             $user->assignRole('Super Admin');
+
+
         }
     }

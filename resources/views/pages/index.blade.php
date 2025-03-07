@@ -2,13 +2,18 @@
     <x-slot name="seo">
         <x-seo-meta :$meta/>
     </x-slot>
-    <x-hero/>
+    <x-hero :$upcomingEvent/>
+    <section class="py-20 relative z-10 bg-black/80 backdrop-blur-md">
+        <div class="text-9xl font-black absolute tracking-tight text-white/5-translate-x-1/3 translate-y-1/2  -rotate-90 left-5 text-center" aria-hidden="true">Planet <br/> Earth</div>
+        <div class="wrapper relative z-10">
+            <iframe class="rounded-md mx-auto max-w-4xl  w-full aspect-video" src="https://www.youtube.com/embed/jxJbml7-9VE?si=v2nBggZLkQ9PajY8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
     <!-- About Section -->
-    <section id="about" class="py-10">
+    <section class="py-10 relative z-10">
         <div class="wrapper">
-            @if($upcomingEvent)
-                <x-timer class="mx-auto z-10 -translate-y-30" :event="$upcomingEvent"/>
-            @endif
+
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">About The Festival</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>

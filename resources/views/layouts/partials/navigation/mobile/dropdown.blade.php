@@ -4,7 +4,7 @@
         aria-haspopup="true"
         id="navigation_link_mobile_{{ $link->slug }}"
         @class([
-          $link->classes,
+          $link->class,
           'flex items-center group w-full px-1.5 rounded py-1 justify-between'
           ])>
         <span>{{ $link->name }}</span>
@@ -25,7 +25,7 @@
         hidden
     >
         <div class="pl-4 border-l ml-4 border-gray-300 dark:border-gray-800 space-y-4">
-           link
+            link
         </div>
     </div>
 </headless-popover>

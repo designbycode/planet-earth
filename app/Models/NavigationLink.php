@@ -16,7 +16,7 @@
                 "slug" => "home",
                 "route" => "home",
                 "activeRoute" => "home",
-                "classes" => "hover:text-primary-500 dark:text-shadow ",
+                "class" => "hover:bg-primary-900/10 dark:hover:bg-primary-100/10",
                 "dropdown" => false,
             ],
             [
@@ -24,7 +24,7 @@
                 "slug" => "about-us",
                 "route" => "about-us",
                 "activeRoute" => "about-us",
-                "classes" => "",
+                "class" => "hover:bg-primary-900/10 dark:hover:bg-primary-100/10",
                 "dropdown" => false,
             ],
             [
@@ -32,7 +32,7 @@
                 "slug" => "trailers",
                 "route" => "trailers.index",
                 "activeRoute" => "trailers*",
-                "classes" => "",
+                "class" => "hover:bg-primary-900/10 dark:hover:bg-primary-100/10",
                 "dropdown" => false,
             ],
             [
@@ -40,7 +40,7 @@
                 "slug" => "film-festivals",
                 "route" => "film-festivals.index",
                 "activeRoute" => "film-festivals*",
-                "classes" => "",
+                "class" => "hover:bg-primary-900/10 dark:hover:bg-primary-100/10",
                 "dropdown" => false,
             ],
             [
@@ -48,7 +48,23 @@
                 "slug" => "contact-us",
                 "route" => "contact-us",
                 "activeRoute" => "contact-us",
-                "classes" => "",
+                "class" => "hover:bg-primary-900/10 dark:hover:bg-primary-100/10",
+                "dropdown" => false,
+            ],
+            [
+                "name" => "Login",
+                "slug" => "login",
+                "route" => "contact-us",
+                "activeRoute" => "contact-us",
+                "class" => "hover:bg-primary-900/10 dark:hover:bg-primary-100/10 border border-primary-500",
+                "dropdown" => false,
+            ],
+            [
+                "name" => "Register",
+                "slug" => "register",
+                "route" => "contact-us",
+                "activeRoute" => "contact-us",
+                "class" => "hover:bg-primary-400 dark:hover:bg-primary-400 bg-primary-500",
                 "dropdown" => false,
             ],
         ];

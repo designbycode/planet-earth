@@ -3,18 +3,18 @@
     namespace App\Observers;
 
     use App\Models\User;
-    use Illuminate\Database\Eloquent\Attributes\ObservedBy;
 
 
-    #[ObservedBy([UserObserver::class])]
     class UserObserver
     {
+        public function creating(User $user): void {}
+
         /**
          * Handle the User "created" event.
          */
         public function created(User $user): void
         {
-            //
+//            $user->assignRole('Super Admin');
         }
 
         /**

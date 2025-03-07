@@ -1,11 +1,14 @@
 @import 'tailwindcss';
 
+/*@preset('../../vendor/filament/support/tailwind.config.preset')*/
 @plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+@plugin "@designbycode/tailwindcss-mask-image";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source "../**/*.blade.php";
 @source "../**/*.js";
-@source "../**/*.vue";
+@source "'../../vendor/filament/**/*.blade.php',";
 @custom-variant dark (&:where(.dark, .dark *));
 
 
@@ -24,6 +27,8 @@
     --color-primary-800: oklch(25.996% 0.07965 268.39);
     --color-primary-900: oklch(19.004% 0.05983 273.58);
     --color-primary-950: oklch(15.802% 0.04593 275.65);
+
+    --rounded-default: 1rem;
 }
 
 .wrapper {
@@ -35,10 +40,11 @@ button:hover {
 }
 
 .btn {
-    @apply inline-flex items-center px-4 py-2 rounded-md font-semibold text-sm uppercase tracking-widest transition ease-in-out duration-150 disabled:opacity-25 focus:outline-none focus:ring-2 hover:bg-primary-900/10 dark:hover:bg-primary-100/10;
+    @apply inline-flex items-center px-4 py-2 rounded-md font-semibold text-xs uppercase tracking-widest transition ease-in-out duration-150 disabled:opacity-25 focus:outline-none focus:ring-2 border border-transparent;
 }
 
 .btn-gradient {
     @apply inline-flex items-center bg-gradient-to-b from-primary-600 to-lime-400 border border-transparent rounded-md font-semibold text-xs  uppercase tracking-widest hover:to-lime-300 focus:to-lime-300 active:to-lime-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition ease-in-out duration-150 text-white;
 }
+
 
