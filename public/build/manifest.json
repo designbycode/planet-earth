@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-B6l3l13u.css",
+    "file": "assets/app-CCp8sAVV.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -415,6 +415,10 @@
   "resources/img/cropped-Planet-Earth2-32x32.jpg": {
     "file": "assets/cropped-Planet-Earth2-32x32-BIsYUb-2.jpg",
     "src": "resources/img/cropped-Planet-Earth2-32x32.jpg"
+  },
+  "resources/img/earth.webp": {
+    "file": "assets/earth-BSD06TDp.webp",
+    "src": "resources/img/earth.webp"
   },
   "resources/img/filmfreeway-logo-hires-blue-2-1024x344.png": {
     "file": "assets/filmfreeway-logo-hires-blue-2-1024x344-BZzUBwe5.png",
