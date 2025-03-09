@@ -1,6 +1,6 @@
 import "./bootstrap"
 import "vanilla-headless"
-
+import "./gsap-animation"
 import createGlobe from "cobe"
 
 // import "./theme-toggle"
@@ -10,7 +10,7 @@ import { setupStarField } from "./starfield"
 
 import.meta.glob(["../img/**/*.{webp,png,svg,jpeg,jpg}"])
 
-const earth = function () {
+const earth: () => void = function (): void {
     let phi = 0
     let canvas = document.getElementById("canvas")!
 
@@ -42,7 +42,7 @@ const earth = function () {
     })
 }
 
-const starfield = function () {
+const starfield: () => void = function (): void {
     const canvas = document.querySelector<HTMLCanvasElement>("#starCanvas")!
     if (canvas) {
         setupStarField(canvas, {
@@ -68,4 +68,4 @@ function initializeCountdowns(): void {
 
 document.addEventListener("livewire:navigated", initializeCountdowns)
 // document.addEventListener("livewire:navigated", earth)
-document.addEventListener("livewire:navigated", starfield)
+// document.addEventListener("livewire:navigated", starfield)

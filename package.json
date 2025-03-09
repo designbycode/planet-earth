@@ -26,7 +26,9 @@
         "alpinejs-textarea-grow": "^1.0.5",
         "canvas-confetti": "^1.9.3",
         "cobe": "^0.6.3",
+        "gsap": "^3.12.7",
         "photoswipe": "^5.4.4",
+        "smooth-scrollbar": "^8.8.4",
         "vanilla-headless": "^0.10.1"
     }
 }

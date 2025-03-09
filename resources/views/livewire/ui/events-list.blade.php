@@ -1,6 +1,6 @@
-<ul class="max-w-xl mx-auto space-y-4 border-ls border-gray-500/20 px-2">
+<ul class="max-w-xl mx-auto space-y-4 border-ls border-gray-500/20 px-2 events-list">
     @foreach($events as $event)
-        <li class="relative hover:bg-neutral-800/50 space-y-2 rounded-md p-6 group">
+        <li class="relative hover:bg-neutral-800/50 space-y-2 rounded-md p-6 group events-list-item">
             <span class="absolute block left-[2px] group-hover:border-primary-500 -translate-x-4 bg-black top-8 size-3 rounded-full border border-gray-500"></span>
             <span class="absolute w-px block bg-gray-500/20 -left-[9px] bottom-0 top-12 rounded-md"></span>
             <h4 class="text-xl font-semibold">{{ $event->title }}</h4>
