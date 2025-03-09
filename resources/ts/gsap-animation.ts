@@ -30,7 +30,7 @@ document.addEventListener("livewire:navigated", function () {
             // start: "top center",
             // end: "top center",
             toggleActions: "restart none none none",
-            markers: true,
+            markers: false,
             // scrub: true,
         },
     })
@@ -49,7 +49,7 @@ document.addEventListener("livewire:navigated", function () {
             // start: "top center",
             // end: "top center",
             toggleActions: "restart none none none",
-            markers: true,
+            markers: false,
             // scrub: true,
         },
     })
