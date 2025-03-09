@@ -1,9 +1,9 @@
 <header class="min-h-screen relative overflow-clip place-content-center bg-black text-white">
     <canvas class="absolute inset-x-0 top-0 -bottom-200 " id="starCanvas"></canvas>
-    <canvas aria-hidden="true" class="absolute inset-x-0 bottom-0 pointer-events-none  bottom-0 z-10 "
-            width="600"
-            height="600"
-            id="canvas"></canvas>
+    {{--    <canvas aria-hidden="true" class="absolute inset-x-0 bottom-0 pointer-events-none  bottom-0 z-10 "--}}
+    {{--            width="600"--}}
+    {{--            height="600"--}}
+    {{--            id="canvas"></canvas>--}}
     <div class="wrapper relative z-20 grid grid-cols-1 md:grid-cols-2">
         <div class="w-90 h-40 absolute top-0  blur-3xl rounded-b-full  z-20 bg-gradient-to-br from-primary-400/30 to-primary-800/30">d</div>
         <div>
@@ -14,7 +14,7 @@
             <p class="max-w-3xl mt-2 text-lg leading-loose text-left">An independent festival in Berlin connecting filmmakers and musicians worldwide. Enjoy top-tier screenings, networking, Q&As, and an exclusive awards ceremony.</p>
             <button class="px-6 my-2 py-2 rounded-md bg-primary-500 hover:bg-primary-400 text-white">Submit Video</button>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center relative z-20">
             @if($upcomingEvent)
                 <x-timer.2 class=" z-10 -translate-y-0" :event="$upcomingEvent"/>
             @endif

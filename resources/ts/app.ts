@@ -67,5 +67,5 @@ function initializeCountdowns(): void {
 }
 
 document.addEventListener("livewire:navigated", initializeCountdowns)
-document.addEventListener("livewire:navigated", earth)
+// document.addEventListener("livewire:navigated", earth)
 document.addEventListener("livewire:navigated", starfield)
