@@ -1,4 +1,4 @@
-<div class="p-6 rounded-md border bg-gray-50/75 dark:bg-gray-900/75 border-gray-300 dark:border-gray-800">
+<div class="p-6 rounded-md border bg-gray-50/75 dark:bg-black border-gray-300 dark:border-gray-800">
 
     <form class="space-y-4" wire:submit="send" method="post">
         @csrf

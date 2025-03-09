@@ -38,7 +38,12 @@
                     Forms\Components\TextInput::make('slug')
                         ->required()
                         ->maxLength(191),
-                    Forms\Components\RichEditor::make('description')
+                    Forms\Components\Textarea::make('description')
+                        ->autosize()
+                        ->rows(4)
+                        ->cols(80)
+                        ->columnSpanFull(),
+                    Forms\Components\RichEditor::make('content')
                         ->columnSpanFull(),
                     Forms\Components\TextInput::make('location')
                         ->maxLength(191)

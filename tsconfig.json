@@ -29,7 +29,7 @@
  *   and `paths` allows for using aliases to map module imports to specific
  *   locations.  This improves code readability and reduces the need for long,
  *   relative import paths.  For example, using `@/*` to map to `./resources/ts/*`
- *   allows imports like `import MyComponent from '@/components/MyComponent'`.
+ *   allows imports like `import MyComponent from '@/web-components/MyComponent'`.
  *
  * - `strict`: Enables strict type checking.  This helps catch potential errors
  *   during development and improves code quality by enforcing stricter type

@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CCp8sAVV.css",
+    "file": "assets/app-BHwwDOnX.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -420,6 +420,10 @@
     "file": "assets/earth-BSD06TDp.webp",
     "src": "resources/img/earth.webp"
   },
+  "resources/img/earth_texture.jpg": {
+    "file": "assets/earth_texture-DMQsO-c0.jpg",
+    "src": "resources/img/earth_texture.jpg"
+  },
   "resources/img/filmfreeway-logo-hires-blue-2-1024x344.png": {
     "file": "assets/filmfreeway-logo-hires-blue-2-1024x344-BZzUBwe5.png",
     "src": "resources/img/filmfreeway-logo-hires-blue-2-1024x344.png"
@@ -461,7 +465,7 @@
     "src": "resources/img/unnamed-file-300x129.jpeg"
   },
   "resources/ts/app.ts": {
-    "file": "assets/app-BrwroY13.js",
+    "file": "assets/app-Dofb_DxN.js",
     "name": "app",
     "src": "resources/ts/app.ts",
     "isEntry": true

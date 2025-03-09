@@ -4,9 +4,12 @@
     </x-slot>
     <section class="py-20">
         <div class="wrapper my-12">
-            <div class="max-w-2xl  space-y-4 mx-auto">
-                <x-timer :$event :showTitle="false" :showUpcoming="false"/>
-                <img class="aspect-video object-center rounded-md" src="{{ $event->getFirstMediaUrl('events', 'big') }}" alt="{{ $event->title }}">
+            <div class="grid place-content-center mx-auto ">
+                <x-timer.2 :$event :showTitle="false" :showUpcoming="false"/>
+            </div>
+
+            <div class="max-w-2xl space-y-4 mx-auto">
+                <img class="rounded-md min-w-full" src="{{ $event->getFirstMediaUrl('events', 'big') }}" alt="{{ $event->title }}">
                 <h1 class="text-5xl mb-2 md:text-4xl font-bold">{{ $event->title }}</h1>
                 <div class="prose prose-a:text-primary-500 ">
                     {!! $event->description !!}

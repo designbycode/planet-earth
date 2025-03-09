@@ -1,21 +1,22 @@
 <?php
 
-	namespace App\Composers;
+    namespace App\Composers;
 
-	use App\Models\NavigationLink;
-    use Illuminate\Support\Facades\Cache;
+    use App\Models\NavigationLink;
     use Illuminate\View\View;
 
-    class NavigationComposer {
+    class NavigationComposer
+    {
 
 
         public object $links;
+
         public function compose(View $view): View
         {
-            $this->links = Cache::remember('nav-links', config('cache.time_to_life'), function () {
-                return NavigationLink::get();
-            });
+//            $this->links = Cache::remember('nav-links', config('cache.time_to_life'), function () {
+//                return NavigationLink::get();
+//            });
 
-            return $view->with('links', $this->links);
+            return $view->with('links', NavigationLink::get());
         }
     }

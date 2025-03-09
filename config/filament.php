@@ -63,9 +63,9 @@ return [
     |--------------------------------------------------------------------------
     |
     | This is the directory that Filament will use to store cache files that
-    | are used to optimize the registration of components.
+    | are used to optimize the registration of web-components.
     |
-    | After changing the path, you should run `php artisan filament:cache-components`.
+    | After changing the path, you should run `php artisan filament:cache-web-components`.
     |
     */
 

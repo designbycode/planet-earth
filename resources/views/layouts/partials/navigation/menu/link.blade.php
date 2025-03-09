@@ -5,7 +5,7 @@
     $active = request()->routeIs($link->activeRoute);
 
     // Start with the base classes
-    $class = $full ? 'flex' : 'inline-flex';
+    $class = $full ? 'flex w-full' : 'inline-flex';
 
     // Add conditional classes for active state
     if ($active) {

@@ -1,6 +1,7 @@
 @props(['upcomingEvent'])
 
-<header class="isolate  bg-black min-h-svh relative overflow-x-clip place-content-center text-white">
+<header class="isolate bg-black min-h-svh relative overflow-x-clip place-content-center text-white">
+
     <canvas class="absolute inset-x-0 top-0 -bottom-200 z-0" id="starCanvas"></canvas>
     <div class="wrapper grid relative z-20 relative -translate-y-20">
         @if($upcomingEvent)
@@ -13,12 +14,8 @@
                 Film Festival
             </span>
         </h1>
-        <p class="max-w-3xl drop-shadow-[2px_3px_2px_rgba(0,0,0,1)]  mt-10 text-lg mx-auto leading-loose text-center">An independent festival in Berlin connecting filmmakers and musicians worldwide. Enjoy top-tier screenings,
-            networking, Q&As, and an exclusive
-            awards ceremony
-            .</p>
-
-
+        <p class="max-w-3xl drop-shadow-[2px_3px_2px_rgba(0,0,0,1)]  mt-10 text-lg mx-auto leading-loose text-center">An independent festival in Berlin connecting filmmakers and musicians worldwide. Enjoy top-tier screenings, networking,
+            Q&As, and an exclusive awards ceremony.</p>
     </div>
 
 
