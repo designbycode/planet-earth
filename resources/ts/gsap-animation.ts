@@ -18,7 +18,7 @@ document.addEventListener("livewire:navigated", function () {
 
     gsap.from(".events-list-item", {
         opacity: 0,
-        x: gsap.utils.wrap([-80, 80]),
+        x: gsap.utils.wrap([-20, 20]),
         duration: 0.3,
         stagger: {
             each: 0.1,
@@ -37,7 +37,7 @@ document.addEventListener("livewire:navigated", function () {
 
     gsap.from(".section-box-item", {
         opacity: 0,
-        x: 40,
+        y: 20,
         // duration: 1,
         stagger: {
             each: 0.1,
@@ -51,6 +51,21 @@ document.addEventListener("livewire:navigated", function () {
             toggleActions: "restart none none none",
             markers: false,
             // scrub: true,
+        },
+    })
+
+    gsap.from(".animate-up", {
+        opacity: 0,
+        y: 50,
+        duration: 0.5,
+        ease: "power1.inOut",
+        stagger: {
+            each: 0.1,
+        },
+        scrollTrigger: {
+            trigger: ".animate-up",
+            toggleActions: "restart none none none",
+            markers: false,
         },
     })
 })

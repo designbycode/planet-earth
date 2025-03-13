@@ -14,7 +14,7 @@
         public function __invoke(): View
         {
             return view('pages.events.index', [
-                'events' => Event::with('media')->get(),
+                'events' => Event::with('media')->where('event_start', '>=', now())->get(),
                 'meta' => [
                     'title' => 'Events List',
                     'description' => 'Events description'

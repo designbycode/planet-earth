@@ -13,7 +13,7 @@
         public function __invoke(): View
         {
             return view('pages.index', [
-                'upcomingEvent' => Event::first(),
+                'upcomingEvent' => Event::where('event_start', '>=', now())->first(),
                 'meta' => [
                     'title' => 'Home Page',
                     'description' => 'Home Page'

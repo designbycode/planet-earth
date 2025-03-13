@@ -19,7 +19,8 @@
         "graham-campbell/markdown": "^16.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "propaganistas/laravel-phone": "^5.3"
+        "propaganistas/laravel-phone": "^5.3",
+        "wire-elements/modal": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.15",

@@ -22,7 +22,7 @@
     @livewireStyles
     @filamentStyles
 </head>
-<body class="antialiased overflow-x-clip flex flex-col text-gray-700 bg-gray-100 dark:bg-black dark:text-gray-300 h-full">
+<body class="antialiased selection:bg-primary-500 selection:text-white overflow-x-clip flex flex-col text-gray-700 bg-gray-100 dark:bg-black dark:text-gray-300 h-full">
 <x-skip/>
 <x-navigation/>
 <main id="main" class="flex-1">
@@ -30,6 +30,8 @@
 </main>
 <x-footer/>
 @livewire('notifications')
+@livewire('wire-elements-modal')
+
 @livewireScripts
 @filamentScripts
 </body>

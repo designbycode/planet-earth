@@ -8,7 +8,7 @@
         <livewire:ui.events-list/>
     </section>
 
-    <section class="wrapper my-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 section-box">
+    <section class="wrapper my-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 ">
         <div class="col-span-3">
             <h2 class="text-4xl font-bold tracking-tight mb-2">Upcoming Events</h2>
         </div>

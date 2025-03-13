@@ -48,7 +48,7 @@ const starfield: () => void = function (): void {
         setupStarField(canvas, {
             starCount: 1800,
             speed: 0.4,
-            backgroundColor: "#000814",
+            backgroundColor: "#111",
             minStarSize: 0.25,
             maxStarSize: 1.5,
             minBrightness: 0.2,
@@ -67,5 +67,5 @@ function initializeCountdowns(): void {
 }
 
 document.addEventListener("livewire:navigated", initializeCountdowns)
-// document.addEventListener("livewire:navigated", earth)
-// document.addEventListener("livewire:navigated", starfield)
+document.addEventListener("livewire:navigated", earth)
+document.addEventListener("livewire:navigated", starfield)

@@ -8,7 +8,9 @@
 @source '../../storage/framework/views/*.php';
 @source "../**/*.blade.php";
 @source "../**/*.js";
-@source "'../../vendor/filament/**/*.blade.php',";
+@source "../../vendor/filament/**/*.blade.php,";
+@source "../../vendor/wire-elements/modal/resources/views/**/*.blade.php";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 
@@ -16,7 +18,17 @@
     --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
 
-
+    /*--color-primary-50: oklch(0.984 0.014 180.72);*/
+    /*--color-primary-100: oklch(0.953 0.051 180.801);*/
+    /*--color-primary-200: oklch(0.91 0.096 180.426);*/
+    /*--color-primary-300: oklch(0.855 0.138 181.071);*/
+    /*--color-primary-400: oklch(0.777 0.152 181.912);*/
+    /*--color-primary-500: oklch(0.704 0.14 182.503);*/
+    /*--color-primary-600: oklch(0.6 0.118 184.704);*/
+    /*--color-primary-700: oklch(0.511 0.096 186.391);*/
+    /*--color-primary-800: oklch(0.437 0.078 188.216);*/
+    /*--color-primary-900: oklch(0.386 0.063 188.416);*/
+    /*--color-primary-950: oklch(0.277 0.046 192.524);*/
     --color-primary: oklch(67.222% 0.17184 16.056);
     --color-primary-50: oklch(100% 0 none);
     --color-primary-100: oklch(98.431% 0.00958 72.664);
@@ -29,7 +41,6 @@
     --color-primary-800: oklch(41.431% 0.16133 349.71);
     --color-primary-900: oklch(29.702% 0.11722 338.83);
     --color-primary-950: oklch(22.878% 0.08791 334.1);
-
     --color-black: #111;
 }
 

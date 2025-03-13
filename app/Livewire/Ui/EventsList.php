@@ -13,7 +13,7 @@
         public function render(): View
         {
             return view('livewire.ui.events-list', [
-                'events' => Event::get()
+                'events' => Event::where('event_start', '>=', now())->orderBy('event_start')->get()
             ]);
         }
     }
